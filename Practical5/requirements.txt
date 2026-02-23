@@ -1,0 +1,4 @@
+gcc
+g++
+mingw-w64
+git
