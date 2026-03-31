@@ -1,8 +1,12 @@
-# Odd Numbers between 1 to 50
+# Find all odd numbers between 1 to 100
 
-odd_numbers = [num for num in range(1, 51) if num % 2 != 0]
+odd_numbers = []
 
-print("Odd Numbers:", odd_numbers)
-print("Three Minimum Odd Numbers:", odd_numbers[:3])
-print("Three Maximum Odd Numbers:", odd_numbers[-3:])
-print("Average of Odd Numbers:", sum(odd_numbers) / len(odd_numbers))
+for i in range(1, 101):
+    if i % 2 != 0:
+        odd_numbers.append(i)
+
+print("List of odd numbers:", odd_numbers)
+print("Minimum odd number:", min(odd_numbers))
+print("Maximum odd number:", max(odd_numbers))
+print("Total (Sum) of odd numbers:", sum(odd_numbers))
